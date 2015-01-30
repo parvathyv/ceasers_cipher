@@ -34,7 +34,7 @@ class Cipher
 
   def get_encrypted_string(alphabet_hash)
    @encrypted_array.each do|index|
-       alphabet_hash.select{|num, alphabet| @original_cipher << alphabet if num == index }
+      alphabet_hash.select{|num, alphabet| @original_cipher << alphabet if num == index }
     end
     @original_cipher.join
   end
