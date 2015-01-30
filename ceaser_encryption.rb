@@ -1,4 +1,4 @@
-# Encryption with Ceaser's Chipher. Decryption code is commented out
+# Encryption with Ceaser's Chipher
 
 class Cipher
 
