@@ -32,13 +32,6 @@ class Cipher
     @encrypted_array
   end
 
-
-  def decryption_array
-    @encrypted_array.each{|value| @decrypted_array << (value - @intshift) % 26}
-    @decrypted_array
-  end
-
-
   def get_encrypted_string(alphabet_hash)
    @encrypted_array.each do|index|
        alphabet_hash.select{|num, alphabet| @original_cipher << alphabet if num == index }
